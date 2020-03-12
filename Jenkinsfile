@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'extreme-torch-268218'
         CLUSTER_NAME = 'cluster-for-cilium'
         LOCATION = 'us-central1-c'
-        CREDENTIALS_ID = 'jenkins-deployer-creds2'
+        CREDENTIALS_ID = 'gke'
    }
    stages {
       stage("Install Kubectl on Jenkins") {
