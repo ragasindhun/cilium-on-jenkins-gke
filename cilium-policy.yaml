@@ -19,3 +19,5 @@ spec:
         http:
         - method: "GET"
           path: "/profiles"
+        - method: "GET"
+          path: "/profiles/.{4}"
