@@ -1,12 +1,10 @@
 pipeline {
-   agent { 
-       docker {image 'gcr.io/extreme-torch-268218/kubectl-on-ubuntu:v1'}
-   } 	
+   agent any
    environment {
         PROJECT_ID = 'extreme-torch-268218'
         CLUSTER_NAME = 'cluster-for-cilium'
         LOCATION = 'us-central1-c'
-        CREDENTIALS_ID = 'jenkins-deployer-credentials'
+        CREDENTIALS_ID = 'jenkins-deployer-creds2'
    }
    stages {
       stage("Install Kubectl on Jenkins") {
