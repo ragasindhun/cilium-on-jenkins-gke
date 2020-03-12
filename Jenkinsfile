@@ -1,5 +1,7 @@
 pipeline {
-   agent any	
+   agent { 
+       docker {image 'gcr.io/extreme-torch-268218/kubectl-on-ubuntu:v1'}
+   } 	
    environment {
         PROJECT_ID = 'extreme-torch-268218'
         CLUSTER_NAME = 'cluster-for-cilium'
