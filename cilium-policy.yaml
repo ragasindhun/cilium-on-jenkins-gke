@@ -18,7 +18,8 @@ spec:
       rules:
         http:
         - method: "GET"
-          path: "/profiles"
+          path: "/teams"
         - method: "GET"
-          path: "/profiles/.{4}"
+          path: "/teams/.{4}"
+
         
